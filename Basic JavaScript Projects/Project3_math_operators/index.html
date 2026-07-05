@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Basic JavaScript Project3_math_operators Assignment</title>
+        <meta charset="UTF-8">
+        <script src="JS/main.js"></script>
+    </head>
+
+    <body>
+        <h1>Click each line</h1>
+        <hr>
+        <!--A paragraph element id to call the  addition_function-->
+        <p id="Add" onclick="addition_Function()">Click Here To Add</p>
+        
+        <!--A paragraph element id to call the  subtraction_function-->
+        <p id="Sub" onclick="subtraction_Function()">Click Here To Subtract</p>
+
+        <!--A paragraph element id to call the  multiplication-->
+        <p id="Mlt" onclick="multiplication()">Click Here To Multiply</p>
+
+         <!--A paragraph element id to call the  division-->
+        <p id="Div" onclick="division()">Click Here To divide</p>
+
+        <!---A paragraph element id to call the more_Math-->
+        <p id="Math" onclick="more_Math()">Click To Solve More_Math</p>
+
+        <!---A paragraph element id to call the Modulus operator-->
+        <p id="Mod" onclick="modulus_Operator()">Click To Calculate Modulus</p>
+
+        <!---A paragraph element id to call the negation operator /Unary Operator--->
+        <p id="nega" onclick="negation_Operator()">Click To display negative Results</p>
+
+        <p id="IncrementText" onclick="Increment()">0</p>
+
+        <p id="DecrementText" onclick="Decrement()">0</p>
+
+        <p id="Ran" onclick="random()">Random</p>
+
+
+
+        <p id="demo"></p>
+
+    <script>
+        //Creating an Object
+    const person = {
+        firstName: "Richard",
+        lastName: "Amponsah",
+        age: 50,
+         fullName: function() {
+        return this.firstName + " " + this.lastName;
+     }
+    };
+
+    document.getElementById("demo").innerHTML = person.fullName();
+
+    </script>
+
+<!--JavaScript Math object method-->
+<h2>JavaScript Math.round()</h2>
+
+<p>Math.round(x) returns the value of x rounded to its nearest integer:</p>
+
+<p id="rich"></p>
+
+<script>
+document.getElementById("rich").innerHTML = Math.round(4.6); <!--Print the result-->
+</script>
+
+
+<h1>JavaScript Math.ceil()</h1>
+
+<p>Math.ceil() rounds a number <strong>up</strong> to its nearest integer:</p>
+
+<p id="ric"></p>
+
+<script>
+document.getElementById("ric").innerHTML = Math.ceil(9.4);
+</script>
+    </body>
+</html>
